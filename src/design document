@@ -1,0 +1,52 @@
+LinearEquation class:
+
+Instance variables:
+    private int firstX - this represents the x coordinate of the first point
+    private int firstY - this represents the y coordinate of the first point
+    private int secondX - this represents the x coordinate of the second point
+    private int secondY - this represents the y coordinate of the second point
+    private String slope
+    private int distance
+    private int yIntercept
+
+Constructor
+    public LinearEquation(double firstX, double firstY, double secondX, double secondY)
+         double firstX = x1
+         double secondX = x2
+         double firstY = y1
+         double secondY = y2
+
+Methods
+    public String slopeAsFraction(double x1, double y1, double x2, double y2)
+        double num = y2 - y1
+        double denom = x2 - x1
+        return num + "/" + denom
+        // returns the slope of the line as a fraction
+
+    public double distance(double x1, double y1, double x2, double y2)
+        return Math.sqrt((y2-y1) * (y2-y1) + (x2-x1) * (x2-x1))
+        // returns the distance between the two points
+
+    public double getYIntercept()
+        // returns the y intercept
+
+    public String toString()
+        String s = "(prints out information)"
+        return s
+        // returns the string of printed information
+
+*** get rid of parentheses then get rid of comma using string methods and indexes, then
+select the numbers before and after the comma
+
+EquationRunner.java
+Step 1: implement Scanner
+Step 2: ask user for the first coordinate
+Step 3: ask user for the second coordinate
+Step 4: use the toString() method to print out the information (first and second coordinates,
+        slope of the line, y intercept, the slope intercept form, and the distance)
+Step 5: ask user for a third x value
+Step 6: calculate the y value with the getYIntercept() method given the user's inputted x value
+Step 7: print out the respective coordinate point
+
+
+
