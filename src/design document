@@ -30,13 +30,13 @@ Methods
     public double getYIntercept()
         // returns the y intercept
 
+     public String solvedYCoordinate(double newX, double yIntercept, double x1, double y1, double x2, double y2)
+        // solves for the y coordinate based on the new x coordinate given by the user
+
     public String toString()
         String s = "(prints out information)"
         return s
         // returns the string of printed information
-
-*** get rid of parentheses then get rid of comma using string methods and indexes, then
-select the numbers before and after the comma
 
 EquationRunner.java
 Step 1: implement Scanner
