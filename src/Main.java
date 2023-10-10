@@ -29,13 +29,5 @@ public class Main {
         double yInt = points.getYIntercept(x1, y1, x2, y2);
         double newYVal = points.solvedYCoordinate(newXVal, yInt, x1, y1, x2, y2);
         System.out.print("The solved coordinate point is: (" + newXVal + "," + newYVal + ")");
-
-
-
-
-        
-
-
-
     }
 }

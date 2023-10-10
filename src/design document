@@ -36,7 +36,7 @@ Methods
     public String toString()
         // returns the string of printed information
 
-EquationRunner.java
+Main.java
 Step 1: implement Scanner
 Step 2: ask user for the first coordinate
 Step 3: ask user for the second coordinate
