@@ -5,16 +5,14 @@ Instance variables:
     private int firstY - this represents the y coordinate of the first point
     private int secondX - this represents the x coordinate of the second point
     private int secondY - this represents the y coordinate of the second point
-    private String slope
-    private int distance
-    private int yIntercept
+
 
 Constructor
-    public LinearEquation(double firstX, double firstY, double secondX, double secondY)
-         double firstX = x1
-         double secondX = x2
-         double firstY = y1
-         double secondY = y2
+    public LinearEquation(int x1, int y1, int x2, int y2)
+         firstX = x1
+         secondX = x2
+         firstY = y1
+         secondY = y2
 
 Methods
     public String slopeAsFraction(double x1, double y1, double x2, double y2)
@@ -23,19 +21,19 @@ Methods
         return num + "/" + denom
         // returns the slope of the line as a fraction
 
+    public double slope(double x1, double y1, double x2, double y2)
+        // returns the slope as a double to be used in other methods
+
     public double distance(double x1, double y1, double x2, double y2)
-        return Math.sqrt((y2-y1) * (y2-y1) + (x2-x1) * (x2-x1))
         // returns the distance between the two points
 
-    public double getYIntercept()
+    public double getYIntercept(double x1, double y1, double x2, double y2)
         // returns the y intercept
 
-     public String solvedYCoordinate(double newX, double yIntercept, double x1, double y1, double x2, double y2)
+     public double solvedYCoordinate(double newX, double yIntercept, double x1, double y1, double x2, double y2)
         // solves for the y coordinate based on the new x coordinate given by the user
 
     public String toString()
-        String s = "(prints out information)"
-        return s
         // returns the string of printed information
 
 EquationRunner.java
@@ -43,10 +41,12 @@ Step 1: implement Scanner
 Step 2: ask user for the first coordinate
 Step 3: ask user for the second coordinate
 Step 4: use the toString() method to print out the information (first and second coordinates,
-        slope of the line, y intercept, the slope intercept form, and the distance)
+        slope of the line, y intercept, the slope intercept form, and the distance, rounded
+        when needed)
 Step 5: ask user for a third x value
-Step 6: calculate the y value with the getYIntercept() method given the user's inputted x value
+Step 6: calculate the y value using the methods to get the y intercept
+        to solve for the new y coordinate, given the user's inputted x value
 Step 7: print out the respective coordinate point
-
+Step 8: end the program
 
 
